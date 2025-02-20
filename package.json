@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "homepage": "https://achrafh17/github.io/kpi-automatisation-frontend-react",
+  "homepage": "https://achrafh17.github.io/kpi-automatisation-frontend-react",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:5000",
@@ -19,7 +19,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy":"npm run start",
+    "predeploy":"npm run build",
     "deploy":"gh-pages -d build"
   },
   "eslintConfig": {
