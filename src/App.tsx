@@ -68,9 +68,9 @@ const ElegantDashboard = () => {
   const triggerFileInput = () => {
     fileInputRef.current.click();
   };
-  fetch("https://kpi-backend-4jcu.onrender.com/upload")
-    .then((response) => response.json())
-    .then((data) => console.log("render data", data));
+  // fetch("https://kpi-backend-4jcu.onrender.com/upload")
+  //   .then((response) => response.json())
+  //   .then((data) => console.log("render data", data));
 
   return (
     <div className="elegant-dashboard">

@@ -6,7 +6,7 @@ export const uploadFile = async (file: File) => {
 
   try {
     console.log('Uploading file...');
-    const response = await axios.post('https://kpi-backend-4jcu.onrender.com/upload', formData, {
+    const response = await axios.post('https://kpi-backend-api.onrender.com', formData, {
       headers: { 'Content-Type': 'multipart/form-data' }
     });
     console.log('Upload success:', response);
