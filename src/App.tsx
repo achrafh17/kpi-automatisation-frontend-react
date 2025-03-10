@@ -1,27 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { uploadFile } from "./apiService.tsx";
 import "./App.css";
-import {
-  Chart as ChartJS,
-  CategoryScale,
-  PointElement,
-  LineElement,
-  LinearScale,
-  Title,
-  Tooltip,
-  Legend,
-  BarElement,
-} from "chart.js";
-ChartJS.register(
-  CategoryScale,
-  PointElement,
-  LineElement,
-  LinearScale,
-  Title,
-  Tooltip,
-  Legend,
-  BarElement
-);
 
 const ElegantDashboard = () => {
   const [file, setFile] = useState(null);
@@ -60,18 +39,12 @@ const ElegantDashboard = () => {
     }
   };
 
-  // const chartData = () => {
-  //   console.log("date array",date);
-  //   console.log("localdate",localdate);
-  // };
+ 
 
   const triggerFileInput = () => {
     fileInputRef.current.click();
   };
-  // fetch("https://kpi-backend-4jcu.onrender.com/upload")
-  //   .then((response) => response.json())
-  //   .then((data) => console.log("render data", data));
-
+ 
   return (
     <div className="elegant-dashboard">
       <header className="dashboard-header">
@@ -213,11 +186,11 @@ const ElegantDashboard = () => {
           </div>
         )}
 
-        <div className="chart-section">
+        {/* <div className="chart-section">
           <div className="chart-card">
             <button>ajouter une date</button>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
